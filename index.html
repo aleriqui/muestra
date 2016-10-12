@@ -1,0 +1,325 @@
+<!DOCTYPE html >
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head >
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+
+        <!--  CSS -->
+        <link href="vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+        <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+        <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="css/app.min.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="/index.html">Material</a>
+                </li>
+                
+                         
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner">
+                    <div class="si-inner">
+                        <div class="profile-menu">
+                            <a >
+                                <div class="profile-pic">
+                                    <img src="img/avatar4.png" height="60" width="60" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <ul class="main-menu">
+                            <li class="">
+                                <a href=""><i class="md md-filter-1"></i>Menu1</a>
+                            </li>  
+                            <li class="">
+                                <a href=""><i class="md md-filter-2"></i>Menu2</a>
+                            </li> 
+                            <li class="">
+                                <a href=""><i class="md md-filter-3"></i>Menu3</a>
+                            </li> 
+                            <li class="sub-menu">
+                                <a href=""><i class="md md-filter-4"></i>Sub-Menu</a>
+                                <ul>
+                                    <li><a><i class="md md-filter-1"></i>Sub-menu 1</a></li>
+                                    <li><a><i class="md md-filter-2"></i>Sub-menu 2</a></li>
+                                    <li><a><i class="md md-filter-3"></i>Sub-menu 3</a></li>
+                                    <li><a><i class="md md-filter-4"></i>Sub-menu 4</a></li>
+                                </ul>
+                            </li> 
+                            <li class="">
+                                <a href="templates/flot-charts.html"><i class="md md-trending-up"></i>Charts</a>
+                            </li> 
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <section id="content">
+                <div class="container">
+                    <div class="block-header">
+                        <h2>Dashboard</h2>  
+                    </div>                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Sales Statistics <small>Product 1 & Product 2</small></h2>
+                            
+                            
+                        </div>
+                        
+                        <div class="card-body">
+                            <div class="chart-edge">
+                                <div id="curved-line-chart" class="flot-chart "></div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="mini-charts">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="mini-charts-item bgm-cyan">
+                                    <div class="clearfix">
+                                        <div class="chart stats-bar"></div>
+                                        <div class="count">
+                                            <small>Website Traffics</small>
+                                            <h2>987,459</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="col-sm-6 col-md-3">
+                                <div class="mini-charts-item bgm-lightgreen">
+                                    <div class="clearfix">
+                                        <div class="chart stats-bar-2"></div>
+                                        <div class="count">
+                                            <small>Website Impressions</small>
+                                            <h2>356,785K</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="col-sm-6 col-md-3">
+                                <div class="mini-charts-item bgm-orange">
+                                    <div class="clearfix">
+                                        <div class="chart stats-line"></div>
+                                        <div class="count">
+                                            <small>Total Sales</small>
+                                            <h2>$ 458,778</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="col-sm-6 col-md-3">
+                                <div class="mini-charts-item bgm-bluegray">
+                                    <div class="clearfix">
+                                        <div class="chart stats-line-2"></div>
+                                        <div class="count">
+                                            <small>Support Tickets</small>
+                                            <h2>23,856</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="dash-widgets">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div id="site-visits" class="dash-widget-item bgm-teal">
+                                    <div class="dash-widget-header">
+                                        <div class="p-20">
+                                            <div class="dash-widget-visits"></div>
+                                        </div>
+                                        
+                                        <div class="dash-widget-title">For the past 30 days</div>
+                                        
+                                        <ul class="actions actions-alt">
+                                            <li class="dropdown">
+                                                <a href="#" data-toggle="dropdown">
+                                                    <i class="md md-more-vert"></i>
+                                                </a>
+                                                
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="#">Refresh</a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>                                    
+                                    <div class="p-20">
+                                        
+                                        <small>Page Views</small>
+                                        <h3 class="m-0 f-400">47,896,536</h3> 
+                                        <br/>
+                                        
+                                        <small>Site Visitors</small>
+                                        <h3 class="m-0 f-400">24,456,799</h3>
+                                        <br/>
+                                        
+                                        <small>Total Clicks</small>
+                                        <h3 class="m-0 f-400">13,965</h3>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-3 col-sm-6">
+                                <div id="best-selling" class="dash-widget-item">
+                                    <div class="dash-widget-header">
+                                        <div class="dash-widget-title">Most Cliks</div>
+                                        <img src="img/widgets/firefox.png" alt="">
+                                        <div class="main-item">
+                                            <small>Mozilla Firefox</small>
+                                            <h2>79,925 </h2>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="listview p-t-5">
+                                        <a class="lv-item" >
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/widgets/Chrome.png "alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">Chrome</div>
+                                                    <small class="lv-small">56,894</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" >
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/widgets/Opera.png" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">Opera</div>
+                                                    <small class="lv-small">42,369</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" >
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/widgets/iexplorer.png" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">Internet explorer</div>
+                                                    <small class="lv-small">12,698</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-sm-6">
+                                <div class="card table-responsive">
+                                    <div class="card-header">
+                                        <h2>Recent Items <small>Phasellus condimentum ipsum id auctor imperdie</small></h2>                                        
+                                    </div>
+                                    
+                                    <div class="card-body m-t-0">
+                                        <table class="table table-inner table-vmiddle">
+                                            <thead>
+                                                <tr>
+                                                    <th>Browser</th>
+                                                    <th>Clicks</th>
+                                                    <th>User</th>
+                                                    <th class="hidden-xs">Version</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="f-500 c-cyan">Firefox</td>
+                                                    <td>79,925</td>
+                                                    <td class="f-500 c-red">150458</td>
+                                                    <td class="hidden-xs">46</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="f-500 c-cyan">Chrome</td>
+                                                    <td>56,894</td>
+                                                    <td class="f-500 c-red">130458</td>
+                                                    <td class="hidden-xs">21</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="f-500 c-cyan">Opera</td>
+                                                    <td>42,369</td>
+                                                    <td class="f-500 c-red">90458</td>
+                                                    <td class="hidden-xs">23</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="f-500 c-cyan">Internet Explorer</td>
+                                                    <td>12,698</td>
+                                                    <td class="f-500 c-red">8698</td>
+                                                    <td class="hidden-xs">11</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+        </section>
+        <!-- Javascript Libraries -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/angular/angular.min.js"></script>
+        <script src="js/angular/app.js"></script>
+        
+        <script src="vendors/flot/jquery.flot.min.js"></script>
+        <script src="vendors/flot/jquery.flot.resize.min.js"></script>
+        <script src="vendors/flot/plugins/curvedLines.js"></script>
+        <script src="vendors/sparklines/jquery.sparkline.min.js"></script>
+        <script src="vendors/easypiechart/jquery.easypiechart.min.js"></script>
+        
+        <script src="vendors/fullcalendar/lib/moment.min.js"></script>
+        <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+        <script src="vendors/simpleWeather/jquery.simpleWeather.min.js"></script>
+        <script src="vendors/auto-size/jquery.autosize.min.js"></script>
+        <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/waves/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+        
+        <script src="js/flot-charts/curved-line-chart.js"></script>
+        <script src="js/flot-charts/line-chart.js"></script>
+        <script src="js/charts.js"></script>
+        
+        <script src="js/charts.js"></script>
+        <script src="js/functions.js"></script>
+        
+
+        
+    </body>
+  </html>
